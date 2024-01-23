@@ -11,11 +11,11 @@
 
 
 
-# 拉取 immortalwrt openwrt-23.05 源码
-git clone -b openwrt-23.05 https://github.com/immortalwrt/immortalwrt.git iwrt23
+# 拉取 immortalwrt master 源码
+git clone -b master https://github.com/immortalwrt/immortalwrt.git iwrtmaster
 # 提取 fullconenat-nft 源码
-cp -rf iwrt23/package/network/utils/fullconenat-nft package/network/utils/fullconenat-nft
+cp -rf iwrtmaster/package/network/utils/fullconenat-nft package/network/utils/fullconenat-nft
 # 提取 fullconenat 源码
-cp -rf iwrt23/package/network/utils/fullconenat package/network/utils/fullconenat
-# 删除 immortalwrt openwrt-23.05 源码
-rm -rf iwrt23
+cp -rf iwrtmaster/package/network/utils/fullconenat package/network/utils/fullconenat
+# 删除 immortalwrt master 源码
+rm -rf iwrtmaster
