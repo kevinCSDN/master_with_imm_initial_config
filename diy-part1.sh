@@ -90,7 +90,7 @@ rm -rf feeds/luci/themes/luci-theme-BootstrapLight
 cd package
 git clone https://github.com/f8q8/luci-app-autoreboot.git
 git clone -b js https://github.com/sirpdboy/luci-theme-kucat.git
-#git clone -b main https://github.com/sirpdboy/luci-app-advancedplus.git
+git clone -b main https://github.com/sirpdboy/luci-app-advancedplus.git
 cd ..
 
 git clone --depth=1 -b master https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
