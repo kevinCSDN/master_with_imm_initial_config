@@ -50,7 +50,21 @@
 #cp -r openwrt-packages/{luci-app-vssr,lua-maxminddb,helloworld} package/
 #rm -rf openwrt-packages
 
+# 删除自带 hysteria 源码
+rm -rf feeds/packages/net/hysteria
+rm -rf package/feeds/packages/hysteria
 
+# 删除自带 gn 源码
+rm -rf feeds/packages/devel/gn
+rm -rf package/feeds/packages/gn
+
+# 删除自带 v2ray-geodata 源码
+rm -rf feeds/packages/net/v2ray-geodata
+rm -rf package/feeds/packages/v2ray-geodata
+
+# 删除自带 xray-core 源码
+rm -rf feeds/packages/net/xray-core
+rm -rf package/feeds/packages/xray-core
 
 git clone https://github.com/kiddin9/openwrt-packages
 shopt -s extglob
