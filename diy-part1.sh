@@ -103,8 +103,9 @@ cp -rf iwrt/package/network/utils/fullconenat-nft package/network/utils/fullcone
 # 提取 fullconenat 源码
 cp -rf iwrt/package/network/utils/fullconenat package/network/utils/fullconenat
 # 提取 default-settings 源码
-cp -rf iwrt//package/emortal/default-settings package/default-settings
+#cp -rf iwrt//package/emortal/default-settings package/default-settings
 # 删除 immortalwrt master 源码
+rm -rf iwrt
 
 
 
