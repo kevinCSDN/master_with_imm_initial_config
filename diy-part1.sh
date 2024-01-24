@@ -50,21 +50,7 @@
 #cp -r openwrt-packages/{luci-app-vssr,lua-maxminddb,helloworld} package/
 #rm -rf openwrt-packages
 
-# 删除自带 hysteria 源码
-rm -rf feeds/packages/net/hysteria
-rm -rf package/feeds/packages/hysteria
 
-# 删除自带 gn 源码
-rm -rf feeds/packages/devel/gn
-rm -rf package/feeds/packages/gn
-
-# 删除自带 v2ray-geodata 源码
-rm -rf feeds/packages/net/v2ray-geodata
-rm -rf package/feeds/packages/v2ray-geodata
-
-# 删除自带 xray-core 源码
-rm -rf feeds/packages/net/xray-core
-rm -rf package/feeds/packages/xray-core
 
 git clone https://github.com/kiddin9/openwrt-packages
 shopt -s extglob
@@ -79,13 +65,6 @@ rm -rf openwrt-packages
 #rm -rf luci1
 
 
-#删除feeds自带mosdns、v2ray-geodata
-rm -rf ./feeds/packages/net/mosdns
-rm -rf feeds/packages/net/v2ray-geodata
-rm -rf feeds/luci/themes/luci-theme-argon
-rm -rf feeds/luci/themes/luci-theme-Bootstrap
-rm -rf feeds/luci/themes/luci-theme-BootstrapDark
-rm -rf feeds/luci/themes/luci-theme-BootstrapLight
 
 cd package
 git clone https://github.com/f8q8/luci-app-autoreboot.git
@@ -102,8 +81,6 @@ git clone -b master https://github.com/immortalwrt/immortalwrt.git iwrt
 cp -rf iwrt/package/network/utils/fullconenat-nft package/network/utils/fullconenat-nft
 # 提取 fullconenat 源码
 cp -rf iwrt/package/network/utils/fullconenat package/network/utils/fullconenat
-# 提取 default-settings 源码
-#cp -rf iwrt//package/emortal/default-settings package/default-settings
 # 删除 immortalwrt master 源码
 rm -rf iwrt
 
@@ -122,13 +99,4 @@ pushd package/small
 #passwall2
 git clone -b main --depth 1 https://github.com/xiaorouji/openwrt-passwall2.git
 git clone -b main --depth 1 https://github.com/xiaorouji/openwrt-passwall.git
-#mosdns
-# git clone -b v5 --depth 1 https://github.com/sbwml/luci-app-mosdns.git
-#git clone --depth=1 https://github.com/fw876/helloworld.git
-#git clone https://github.com/kevinCSDN/lua-maxminddb.git  #git lua-maxminddb 依赖
-#git clone https://github.com/qqhpc/jerrykuku-luci-app-vssr.git
-#git clone --depth=1 https://github.com/cfxy2010/luci-app-turboacc.git
-
-# git clone https://github.com/kevinCSDN/luci-app-vssr-plus.git  
-
 popd
