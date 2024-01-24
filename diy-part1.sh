@@ -96,6 +96,16 @@ cd ..
 git clone --depth=1 -b master https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
 git clone --depth=1 https://github.com/jerrykuku/luci-app-argon-config package/luci-app-argon-config
 
+# 拉取 immortalwrt master 源码
+git clone -b master https://github.com/immortalwrt/immortalwrt.git iwrt
+# 提取 fullconenat-nft 源码
+cp -rf iwrt/package/network/utils/fullconenat-nft package/network/utils/fullconenat-nft
+# 提取 fullconenat 源码
+cp -rf iwrt/package/network/utils/fullconenat package/network/utils/fullconenat
+# 提取 default-settings 源码
+cp -rf iwrt//package/emortal/default-settings package/default-settings
+# 删除 immortalwrt master 源码
+
 
 
 
