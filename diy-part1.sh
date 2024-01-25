@@ -73,7 +73,7 @@ git clone -b main https://github.com/sirpdboy/luci-app-advancedplus.git
 cd ..
 
 git clone --depth=1 -b master https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
-git clone --depth=1 https://github.com/jerrykuku/luci-app-argon-config package/luci-app-argon-config
+git clone --depth=1 -b master https://github.com/jerrykuku/luci-app-argon-config package/luci-app-argon-config
 
 # 拉取 immortalwrt master 源码
 git clone -b master https://github.com/immortalwrt/immortalwrt.git iwrt
